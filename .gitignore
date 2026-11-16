@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+*.local.env
+
+# Secrets / local runtime
+max_bot.local.env
+*.pem
+*.key
+credentials.json
+tsd.env
+.poller*
+monitor.instance.lock
+report.gen.lock
+
+# Runtime data (factory machine)
+logs/
+reports/
+*.log
+hang_alert*.log
+sent.log
+tsd_state.json
+tsd_state.json.*
+plans.json
+poller_state.json
+downtime.json
+*.tmp
+*.tmp.xlsx
+
+# Excel / large binary data (keep path, not contents)
+data/*.xlsx
+data/*.xls
+data/~$*
+static/products/*
+!static/products/.gitkeep
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Archives / scratch
+archive*/
+tmp/
